@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Gossip</title>
+    <link
+      <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Gossip Gals</h1>
+    <form class="newPostForm" method="post">
+      <input
+        type="text"
+        name="Name"
+        class="inputText"
+        value=""
+        placeholder="Enter your name..."
+      />
+      <input
+        type="text"
+        name="Message"
+        class="inputText"
+        value=""
+        placeholder="Leave your message"
+      />
+      <input type="submit" class="inputText" name="Post" value="Post" />
+    </form>
+    <div class="filterForm">
+      <select
+        id="sort-dropdown"
+        name="select-sort"
+        onchange="sortPostData(this.value)"
+      >
+        <option selected="selected" value="Sort By:" disabled>Sort By:</option>
+        <option value="Author">Author</option>
+        <option value="Likes">Popularity</option>
+        <option value="Length">Post Length</option>
+      </select>
+    </div>
+    <div class="theMainBodyDiv"></div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
